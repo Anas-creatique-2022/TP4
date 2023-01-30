@@ -1,0 +1,18 @@
+"""
+Creer par Anas Siah
+groupe 405
+TP4 projet ATE
+"""
+
+
+class StringFoo:
+    def __init__(self, message, set_string):
+        self.message = str(input("Quelle est ton age"))
+        self.set_string = ""
+
+    def __str__(self):
+        return f"{self.message}({self.set_string})"
+
+
+p1 = StringFoo("", "")
+print(p1.message.upper())
