@@ -1,0 +1,19 @@
+"""
+Creer par Anas Siah
+groupe 405
+TP4 projet ATE
+"""
+
+import random
+
+from dataclasses import dataclass
+
+
+@dataclass
+class Attributs:
+    cha = random.randint(1, 10)
+    wis = random.randint(1, 10)
+    force = random.randint(1, 10)
+    intelligence = random.randint(1, 10)
+    con = random.randint(1, 10)
+    dex = random.randint(1, 10)
