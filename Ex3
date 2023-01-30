@@ -1,0 +1,30 @@
+"""
+Creer par Anas Siah
+groupe 405
+TP4 projet ATE
+"""
+
+from math import pi
+
+
+class Cercle:
+
+    def __init__(self, rayon, longeur):
+        self.rayon = int(input("donne la mesure de ton rayon"))
+
+        self.circonference = self.rayon * 2 * pi
+
+        self.aire = self.rayon * self.rayon * pi
+
+    def __int__(self):
+        return f"{self.rayon})"
+
+
+p1 = Cercle(0, 0)
+
+print("Votre rayon:")
+print(p1.rayon)
+print("Votre aire:")
+print(p1.aire)
+print("Circonference:")
+print(p1.circonference)
