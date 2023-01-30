@@ -1,0 +1,27 @@
+"""
+Creer par Anas Siah
+groupe 405
+TP4 projet ATE
+"""
+
+class Rectangle:
+
+    def __init__(self, largeur, longeur):
+        self.largeur = int(input("Donner la largeur de ton rectangle"))
+
+        self.longeur = int(input("Donner la longeur de ton rectangle"))
+
+        self.aire = self.largeur * self.longeur
+
+    def __int__(self):
+        return f"{self.largeur}({self.longeur})"
+
+
+p1 = Rectangle(0, 0)
+
+print("ta largeur:")
+print(p1.largeur)
+print("ta longeur:")
+print(p1.longeur)
+print("l'aire de ton rectangle est")
+print(p1.aire)
