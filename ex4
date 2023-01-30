@@ -1,0 +1,44 @@
+"""
+Creer par Anas Siah
+groupe 405
+TP4 projet ATE
+"""
+
+import random
+
+
+class Hero:
+
+    def __init__(self, name):
+        self.herodomage = None
+        self.hp = random.randint(1, 10) + random.randint(1, 10)
+        self.atk = random.randint(1, 6)
+        self.defence = random.randint(1, 6)
+        self.name = name
+
+    def attack(self):
+        self.herodomage = random.randint(1, 6) + self.atk - random.randint(1, 6)
+        self.hit = random.randint(1, 6) - self.defence
+        self.domagestep = self.hp - self.hit
+
+
+p1 = Hero("Ironman")
+
+print("ton hp:")
+print(p1.hp)
+print("ton attaque:")
+print(p1.atk)
+print("defence:")
+print(p1.defence)
+print("nom:")
+print(p1.name)
+
+p1.attack()
+
+print(f"ton ennemi a perdu {p1.herodomage} HP")
+print(f" tu a pris {p1.domagestep} Dommage")
+
+p1.hp = p1.hp - p1.domagestep
+
+if p1.hp <= 0:
+    print("Tu est mort")
